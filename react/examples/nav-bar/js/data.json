@@ -1,0 +1,11 @@
+[{
+    "text": "THE TEXT OF YOUR LINK",
+    "url": "http://THE.URL"
+}, {
+    "text": "THE TEXT OF YOUR LINK",
+    "url": "http://THE.URL",
+    "submenu": [{
+        "text": "THE TEXT OF YOUR LINK",
+        "url": "http://THE.URL"
+    }]
+}]

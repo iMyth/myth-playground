@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>Basic Example</title>
+    <link rel="stylesheet" href="../shared/css/base.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="mynav">
+    </nav>
+</body>
+    <script src="../shared/thirdparty/console-polyfill.js"></script>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/JSXTransformer.js"></script>
+    <script type="text/jsx">
+        import NavBar from 'js/nav-bar';
+        /*NavBar.setProps({
+            items: [{ 
+                "text": "THE TEXT OF YOUR LINK", 
+                "url": "http://THE.URL" 
+            }, { 
+                "text": "THE TEXT OF YOUR LINK", 
+                "url": "http://THE.URL", 
+                "submenu": [{ 
+                    "text": "THE TEXT OF YOUR LINK", 
+                    "url": "http://THE.URL" 
+                }] 
+            }] 
+        });*/
+        React.render( NavBar, document.getElementById('mynav') ); 
+        
+    </script>
+</html>
