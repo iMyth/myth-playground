@@ -4,7 +4,6 @@
 <head>
     <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
     <title>Basic Example</title>
-    <link rel="stylesheet" href="../shared/css/base.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -80,13 +79,13 @@
           }
         })
         React.render( <NavBar items= {[{
-            "text": "THE TEXT OF YOUR LINK",
+            "text": "Item1",
             "url": "http://THE.URL"
         }, {
-            "text": "THE TEXT OF YOUR LINK",
+            "text": "Item2",
             "url": "http://THE.URL",
             "submenu": [{
-                "text": "THE TEXT OF YOUR LINK",
+                "text": "SubItem",
                 "url": "http://THE.URL"
             }]
         }]} />, document.getElementById('mynav') )
