@@ -1,0 +1,40 @@
+html,
+body,
+.container, .fullscreen {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div {
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.keypad{
+	/**height: 21rem;
+	width: 21rem;**/
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.keypad-toolbar{
+	/**height: 7rem;**/
+	display: flex;
+	flex-direction: row;
+	flex:1;
+}
+.key{
+	/**height: 7rem;
+	width: 7rem;**/
+	display: block;
+	flex:1;
+	margin: auto;
+	/**line-height: 7rem;**/
+	text-align: center;
+}
