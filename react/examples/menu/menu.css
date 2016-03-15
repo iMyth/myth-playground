@@ -1,0 +1,35 @@
+html,
+body,
+div,
+.container, .fullscreen {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu {
+    width: 20rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+}
+
+
+.left-menu {
+    left: 0;
+}
+
+.container {
+    background: #ccc;
+    display: block;
+    /*left: 20rem;*/
+    position: relative;
+    -webkit-animation-timing-function: ease-in-out;
+    /*-webkit-transition-duration: 400ms;*/
+}
