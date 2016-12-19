@@ -9,6 +9,16 @@ var WechatPayment = {
     WechatPayment.options = options;
   },
 
+  getOpenIdWithCode: function (code, fn) {
+    request({
+      url: `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${WechatPayment.options.appid}&secret=${WechatPayment.options.appSecret}&code=${code}&grant_type=authorization_code`,
+      method: 'GET'
+    },
+    function(err, response, body){
+      fn(body);
+    });
+  },
+
   // 创建统一支付订单
   // spec: https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_1
   createUnifiedOrder: function(order, fn) {
