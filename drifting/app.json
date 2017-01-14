@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarTitleText": "流动图书馆",
+    "navigationBarTextStyle":"white"
+  }
+}

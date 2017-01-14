@@ -1,0 +1,20 @@
+<!--user.wxml-->
+<view class="user">
+  <view class="info">
+    <view class="title">
+      <text>流动图书馆</text>
+    </view>
+    <view class="desc">
+      <text>流动图书馆是一个图书漂流和借阅工具，旨在共享闲置图书，并链接趣味相投的小伙伴。为保障用户的利益及安全，流动图书馆目前仅限于金山集团内部范围使用，所以注册用户我们会线下沟通确认身份哦</text>
+    </view>
+    <view class="start">
+      <button bindtap="startDrifting">点我开始漂流图书</button>
+    </view>
+  </view>
+  <view class="footer">
+    <view>借书</view>
+    <view>漂流书</view>
+    <view>书单</view>
+    <view>还书</view>
+  </view>
+</view>
