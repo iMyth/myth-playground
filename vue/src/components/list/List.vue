@@ -9,17 +9,21 @@
 
 <template>
   <div class="list" ref="list">
-    <div class="scroll-body">
-      <div class="list-item" v-for="item in data" v-bind:key="item.id">
-        <span>{{item.firstName}}</span>
-        <span>{{item.lastName}}</span>
+    <vue-scrollbar :style="{ height: '100%', width: '100%', minWidth: '1172px' }">
+      <div class="scroll-body">
+        <div class="list-item" v-for="item in data" v-bind:key="item.id">
+          <span>{{item.firstName}}</span>
+          <span>{{item.lastName}}</span>
+        </div>
       </div>
-    </div>
+    </vue-scrollbar>
   </div>
 </template>
 
 <script>
 import { throttle } from 'util'
+import 'components/scrollbar/VueScrollbar'
+
 export default {
   name: 'list',
   props: {
@@ -60,6 +64,9 @@ export default {
       // TODO: Calculate
       // let visibleArea = this.$el.clientHeight
     }
+  },
+  components: {
+    VueScrollbar
   }
 }
 </script>
